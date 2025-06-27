@@ -4,7 +4,7 @@
 class HomeController extends Controller {
     public function index() {
         // Load the home view
-        $this->layout('home/index', 'default', [
+        $this->view('home/index', [
             'title' => 'Home',
             'description' => 'Selamat datang di Sistem Informasi Sekolah'
         ]);

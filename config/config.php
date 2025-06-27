@@ -6,3 +6,6 @@ define('BASE_URL', $base_url);
 define('BASE_PATH', dirname(__DIR__)); // Path to the project root
 define('APP_NAME', 'SekolahApp');
 define('APP_VERSION', '1.0.0');
+
+
+session_start(); // Start the session for user authentication
