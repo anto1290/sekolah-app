@@ -1,0 +1,4 @@
+public/uploads/*
+# Ignore all files in the uploads directory
+# except for the .gitkeep file
+# This allows the directory to be tracked in Git
