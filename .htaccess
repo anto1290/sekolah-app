@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /sekolah-app/
+
+# Jika file/folder tidak ada, redirect ke public/index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ public/index.php?url=$1 [QSA,L]

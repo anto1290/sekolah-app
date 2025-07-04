@@ -9,9 +9,9 @@ class App {
     $url = $this->parseUrl();
     // Controller
     if (!empty($url) && !is_null($url)) {
-      if (isset($url[1]) && file_exists(BASE_PATH. "/controllers/" . ucfirst($url[1]) . "Controller.php")) {
-        $this->controller = ucfirst($url[1]) . "Controller";
-        unset($url[0]);
+      if (isset($url[3]) && file_exists(BASE_PATH. "/controllers/" . ucfirst($url[3]) . "Controller.php")) {
+        $this->controller = ucfirst($url[3]) . "Controller";
+        unset($url[3]);
       }
 
     };
@@ -20,16 +20,12 @@ class App {
 
     $this->controller = new $this->controller;
     // Method
-    if (isset($url[2]) && method_exists($this->controller, $url[2])) {
-      $this->method = $url[2];
-      unset($url[2]);
+    if (isset($url[4]) && method_exists($this->controller, $url[4])) {
+      $this->method = $url[4];
+      unset($url[4]);
     }
-
     // Parameters
-    if (!empty($url)) {
-      $this->params = array_values($url);
-    }
-
+    $this->params = array_values(array_slice($url, 3));
     // Call the controller method with parameters
     call_user_func_array([$this->controller, $this->method], $this->params);
   }
@@ -38,7 +34,7 @@ class App {
       // Sanitize the URL and remove trailing slashes
       // Then explode it into an array
       // Use FILTER_SANITIZE_URL instead of PDO::FILLTER_SANITIZE_URL
-      $sl = explode('/', filter_var(rtrim($_SERVER['REQUEST_URI'], '/')));
+      $sl = explode('/', filter_var(rtrim($_SERVER['REQUEST_URI'], '/'), FILTER_SANITIZE_URL));
       // Remove the first element if it's empty (which happens if the URL starts with a slash)
       return $sl;
     }

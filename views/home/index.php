@@ -1,130 +1,164 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page Sekolah</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  </head>
-  <body class="font-sans text-gray-800">
-    
-    <!-- Hero Section -->
-    <section class="bg-blue-900 text-white py-20">
-      <div class="container mx-auto px-6 text-center">
-        <h1 class="text-4xl font-bold mb-4">Selamat Datang di SD Cerdas Solusi</h1>
-        <p class="text-lg mb-6">Sekolah Unggul, Berkarakter & Berbasis Teknologi</p>
-        <a href="#pendaftaran" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300">Daftar Sekarang</a>
+<div class="container-fluid">
+  <div class="container pt-5 px-2 pb-2">
+    <div class="row justify-content-between">
+      <div class="col-5">
+        <h1 class="text-left">Universitas <span class="text-primary">Widya Husada</span> Semarang</h1>
+        <p class="text-left">Universitas WHS adalah tempat mencetak penerus bangsa
+yang berkualitas dan berprestasi di segala bidang
+yang dapat bersaing di dunia  internasional</p>
+        <div class="mt-2">
+          <button class="btn btn-primary">Daftar Sekarang</button>
+        </div>
       </div>
-    </section>
-    
-<!-- Program Jumlah -->
-<section class="py-16 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Jumlah Perolehan Saat Ini</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-gray-50 p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-2">Guru Mengajar</h3>
-            <p class="text-2xl font-bold">50 </p>
+      <div class="col-5">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipPhNXY0aDBMvIJKcaIzMdzduFzGPXkhI2zDu33I=s1360-w1360-h1020-rw" alt="uwhs" class="rounded" widht="300" height="280">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card Info -->
+ <div class="my-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dosen</h5>
+              <p class="card-text h2 text-center">50 <i class="fa-solid fa-user"></i></p>
+            </div>
           </div>
-          <div class="bg-gray-50 p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-2">Peserta Didik</h3>
-            <p class="text-2xl font-bold">500</p>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Mahasiswa</h5>
+              <p class="card-text h2 text-center">300 <i class="fa-solid fa-user-graduate"></i></p>
+            </div>
           </div>
-          <div class="bg-gray-50 p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-2">Ruang Kelas</h3>
-            <p class="text-2xl font-bold">20</p>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Kelas</h5>
+              <p class="card-text h2 text-center">17 <i class="fa-solid fa-building-columns"></i></p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Tentang Sekolah -->
-    <section class="py-16 bg-gray-100" id="tentang">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-6">Tentang Sekolah</h2>
-        <p class="text-center max-w-2xl mx-auto text-lg">
-          SD Cerdas Solusi berdiri sejak 2010 dengan komitmen mencetak generasi yang cerdas, tangguh, dan berakhlak mulia. Mengusung kurikulum nasional dan internasional berbasis teknologi dan karakter.
-        </p>
-      </div>
-    </section>
-    
-    
-    <!-- Program Unggulan -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Program Unggulan</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="bg-gray-50 p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-2">Bilingual Class</h3>
-            <p>Kelas dengan pendekatan bahasa Inggris & Indonesia secara aktif.</p>
-          </div>
-          <div class="bg-gray-50 p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-2">Tahfidz & Karakter</h3>
-            <p>Program penguatan nilai keislaman dan pembentukan karakter mulia.</p>
-          </div>
-          <div class="bg-gray-50 p-6 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-2">STEM & Coding</h3>
-            <p>Mengembangkan logika dan kreativitas siswa melalui teknologi.</p>
+    </div>
+ </div> 
+ <!-- Card WHY -->
+<div class="container py-3">
+  <div class="text-center justify-content-center align-items-center d-flex flex-column my-5">
+    <div class="w-50">
+      <h1>Kenapa Harus Universitas <span class="text-primary">Widya Husada</span>  Semarang?</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body text-center">
+          <img src="./img/icons/computer.png" alt="komputer" class="" width="50" height="50">
+          <div class="card-text mt-3">
+            <h4>Fasilitas Lengkap</h4>
+            <p>Penunjang belajar dengan kualitas terbaik</p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Galeri -->
-    <section class="py-16 bg-gray-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Galeri Kegiatan</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <img src="https://via.placeholder.com/300" alt="Kegiatan 1" class="rounded shadow" />
-          <img src="https://via.placeholder.com/300" alt="Kegiatan 2" class="rounded shadow" />
-          <img src="https://via.placeholder.com/300" alt="Kegiatan 3" class="rounded shadow" />
-          <img src="https://via.placeholder.com/300" alt="Kegiatan 4" class="rounded shadow" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimoni -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Apa Kata Mereka</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-gray-100 p-6 rounded-lg shadow">
-            <p>"Anak saya jadi lebih percaya diri dan suka belajar. Guru-gurunya luar biasa!"</p>
-            <p class="mt-4 font-semibold">– Ibu Rina, Orang Tua Siswa</p>
-          </div>
-          <div class="bg-gray-100 p-6 rounded-lg shadow">
-            <p>"Saya senang bisa belajar coding dan membuat robot kecil!"</p>
-            <p class="mt-4 font-semibold">– Daffa, Siswa Kelas 5</p>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+      <div class="card-body text-center">
+          <img src="./img/icons/bank.png" alt="komputer" class="" width="50" height="50">
+          <div class="card-text mt-3">
+            <h4>Lingkungan Nyaman</h4>
+            <p>Penunjang belajar dengan kualitas terbaik</p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Info Pendaftaran -->
-    <section id="pendaftaran" class="py-16 bg-blue-50">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6">Info Pendaftaran</h2>
-        <p class="mb-4">Pendaftaran siswa baru tahun ajaran 2025/2026 telah dibuka!</p>
-        <a href="#" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-500">Formulir Pendaftaran</a>
-      </div>
-    </section>
-
-    <!-- Hubungi Kami -->
-    <section class="py-16 bg-gray-800 text-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-6">Hubungi Kami</h2>
-        <p class="text-center mb-4">📞 0812-3456-7890 | ✉️ info@cerdassolusi.sch.id</p>
-        <div class="text-center">
-          <a href="#" class="text-yellow-400 underline">Lihat Lokasi di Google Maps</a>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+      <div class="card-body text-center">
+          <img src="./img/icons/team.png" alt="komputer" class="" width="50" height="50">
+          <div class="card-text mt-3">
+            <h4>Pengajar Kompeten</h4>
+            <p>Penunjang belajar dengan kualitas terbaik</p>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 text-center py-6 text-sm">
-      &copy; 2025 SD Cerdas Solusi. All rights reserved.
-    </footer>
-
-  </body>
-</html>
+    </div>
+    <div class="col-md-3">
+      <div class="card">
+      <div class="card-body text-center">
+          <img src="./img/icons/team_work.png" alt="komputer" class="" width="50" height="50">
+          <div class="card-text mt-3">
+            <h4>Kerja Sama Luas</h4>
+            <p>Penunjang belajar dengan kualitas terbaik</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Section Who -->
+<div class="container py-4">
+  <div class="text-center justify-content-center align-items-center d-flex flex-column my-5">
+    <div class="w-50">
+      <h1>Siapa Kami?</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipPhNXY0aDBMvIJKcaIzMdzduFzGPXkhI2zDu33I=s1360-w1360-h1020-rw" alt="uwhs" class="rounded" widht="300" height="280">
+      
+    </div>
+    <div class="col-md-8">
+    <p>Universitas Widya Husada Semarang adalah perguruan tinggi yang berkomitmen untuk mencetak generasi penerus bangsa yang berkualitas dan berprestasi di segala bidang. Dengan fasilitas lengkap, lingkungan nyaman, dan pengajar kompeten, kami siap memberikan pendidikan terbaik untuk masa depan yang gemilang.</p>
+    <p>Kami memiliki kerja sama luas dengan berbagai institusi, sehingga mahasiswa kami dapat mengakses peluang belajar dan karir yang lebih baik. Bergabunglah bersama kami dan jadilah bagian dari komunitas akademis yang dinamis dan inovatif.</p>
+    </div>
+  </div>
+</div>
+<!-- End of Section Who --> 
+ <!-- Section News -->
+  <div class="continer-fluid bg-success-subtle py-4">
+    <div class="container">
+      <div class="text-center justify-content-center align-items-center d-flex flex-column my-5">
+        <div class="w-50">
+          <h1>Berita Terbaru</h1>
+        </div>
+      </div>
+      <div class="row">
+        <?php foreach ($data['berita'] as $news) { ?>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="<?= $news['image'] ?>" class="card-img-top" height="200" alt="Berita 1">
+            <div class="card-body">
+              <h5 class="card-title"><?= $news['title']; ?></h5>
+              <p class="card-text"><?= substr($news['description'], 0, 70); ?>...</p>
+              <a href="<?= BASE_URL.'artikel/detail/'. $news['id'] ?>" class="btn btn-primary">Baca Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
+      </div>
+    </div>
+  </div>
+<!-- End of Section News -->
+<!-- Section Galery -->
+<div class="container py-4">
+  <div class="text-center justify-content-center align-items-center d-flex flex-column my-5">
+    <div class="w-50">
+      <h1>Galeri Kegiatan Kami</h1>
+    </div>
+  </div>
+  <div class="row">
+    <?php foreach ($data['galeri'] as $galeri) { ?>
+    <div class="col-md-4">
+      <img src="<?= $galeri['image'] ?>" alt="<?= $galeri['title'] ?>" class="img-fluid rounded mb-3" width="250" height="250">
+    </div>
+    <?php } ?>
+  </div>
+</div>
+<!-- End of Section Galery -->
