@@ -5,23 +5,10 @@
     </div>
   </div>
   <div class="row">
+    <?php foreach($data['galeri'] as $galery) { ?> 
     <div class="col-md-3">
-      <img src="./img/galeri1.jpg" alt="Galeri 1" class="img-fluid rounded mb-3">
+      <img src="<?= $galery['image'] ?>" alt="<?= $galery['title'] ?>" class="img-fluid rounded mb-3" width="280" height="300">
     </div>
-    <div class="col-md-3">
-      <img src="./img/galeri2.jpg" alt="Galeri 2" class="img-fluid rounded mb-3">
-    </div>
-    <div class="col-md-3">
-      <img src="./img/galeri3.jpg" alt="Galeri 3" class="img-fluid rounded mb-3">
-    </div>
-    <div class="col-md-3">
-      <img src="./img/galeri4.jpg" alt="Galeri 4" class="img-fluid rounded mb-3">
-    </div>
-    <div class="col-md-3">
-      <img src="./img/galeri5.jpg" alt="Galeri 5" class="img-fluid rounded mb-3">
-    </div>
-    <div class="col-md-3">
-      <img src="./img/galeri6.jpg" alt="Galeri 6" class="img-fluid rounded mb-3">
-    </div>
+    <?php } ?>
   </div>
 </div>
